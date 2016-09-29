@@ -1,15 +1,7 @@
 #:kivy 1.9.1
 <Rotschwarz>:
-	orientation: 'vertical'
-	BoxLayout:
+	Widget:
 		Button:
 			text: 'Rot'
-			on_press: print('test')
-			size_hint: (.5,1)
-		Button:
-			text: 'Schwarz'
-			size_hint: (.5,1)
-		Widget:
-			text: 'Farbe'
-			#pos_hint: ('.4',0.9)
-			size_hint: (.4,1)
+			size: root.size
+			on_press: root.alles
