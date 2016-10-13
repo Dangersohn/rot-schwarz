@@ -25,10 +25,6 @@ class TestApp(App):
 	def callback(self, event):
 		global rot
 		global schwarz
-		print("rot")
-		print(rot)#für debuggin
-		print("schwarz")
-		print(schwarz)
 		if  rot > 0 and schwarz > 0:
 			self.btn.text= 'Karte ziehen'
 			choice = random.randrange(1,3)
